@@ -1,8 +1,8 @@
 import numpy as np
 import cv2 as cv
 import argparse
-parser = argparse.ArgumentParser(description='This sample demonstrates Lucas-Kanade Optical Flow calculation. \
-                                              The example file can be downloaded from: \
+parser = argparse.ArgumentParser(description='Lucas-Kanade Optical Flow calculation. \
+                                              Example file at: \
                                               https://www.bogotobogo.com/python/OpenCV_Python/images/mean_shift_tracking/slow_traffic_small.mp4')
 parser.add_argument('image', type=str, help='/Users/zorawarpurohit/Pictures/Octo.MP4')
 args = parser.parse_args()
