@@ -5,7 +5,7 @@ cam = cv2.VideoCapture(0)
 
 pygame.init()
 pygame.mixer.init()
-sound = pygame.mixer.Sound("ocean.mp3")
+sound = pygame.mixer.Sound("whistle.mp3")
 
 
 while cam.isOpened():
@@ -19,7 +19,7 @@ while cam.isOpened():
     contours, _ = cv2.findContours(dilated, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     #cv2.drawContours(frame1, contours, -1, (0,255,150), 2)
     for c in contours:
-        if cv2.contourArea(c) < 10000:
+        if cv2.contourArea(c) < 1000:
             continue
         x,y,w,h = cv2.boundingRect(c)
         cv2.rectangle(frame1, (x,y), (x+w, y+h), (0,255,100), 2)
