@@ -7,7 +7,6 @@ pygame.init()
 pygame.mixer.init()
 sound = pygame.mixer.Sound("whistle.mp3")
 
-
 while cam.isOpened():
     ret, frame0 = cam.read()
     ret, frame1 = cam.read()
