@@ -18,13 +18,13 @@ while True:
 
     for c in contours:
         area = cv2.contourArea(c)
-        if area > 1000:
+        if area > 2000:
             x, y, w, h = cv2.boundingRect(c)
             cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
-            if y < prev_y - 150             :
+            if y < prev_y - 150 :
                 pyautogui.press('space')
-                sl(.5)
-
+                
+     
             prev_y = y
     cv2.imshow('frame', frame)
     if cv2.waitKey(10) == ord('q'):
