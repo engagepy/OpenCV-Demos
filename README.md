@@ -6,7 +6,7 @@
 
 ## Avoid any datebase sync errors by following these steps please: 
 
-> `git clone https://github.com/AstraTechz/bikerental_django.git`
+> `git clone <repo-link-github>`
 
 > `python3 -m venv env`
 
@@ -14,10 +14,5 @@
 
 > `pip3 install -r requirements.txt`
 
-> `python3 manage.py makemigrations`
-
-> `python3 manage.py migrate --run-syncdb`
-
-> `python3 manage.py runserver`
-
+> `python3 <file-name>.py `
 
