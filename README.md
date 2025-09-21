@@ -1,10 +1,10 @@
 
 
-# OpenCV - Test Scripts©
+# OpenCV - Demo Scripts
 
 
 
-## Avoid any datebase sync errors by following these steps please: 
+## Follow these steps : 
 
 > `git clone <repo-link-github>`
 
